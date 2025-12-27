@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz degli Animali Marini</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Canvas per i coriandoli -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <!-- Sezione Benvenuto e Quiz -->
+    <section id="quiz-section">
+        <div class="container">
+            <h1 class="title">🌊 Ciao Piccolo Esploratore dell'Oceano! 🐠</h1>
+            <p class="subtitle">Clicca su un animale marino e scopri i segreti del mare!</p>
+            
+            <!-- Griglia Animali -->
+            <div id="animal-grid" class="animal-grid">
+                <div class="animal-card" data-animal="0">
+                    <img src="assets/images/medusa.jpg" alt="Medusa">
+                    <p>🪼 Medusa</p>
+                </div>
+                <div class="animal-card" data-animal="1">
+                    <img src="assets/images/cavalluccio-marino.jpg" alt="Cavalluccio Marino">
+                    <p>🐴 Cavalluccio Marino</p>
+                </div>
+                <div class="animal-card" data-animal="2">
+                    <img src="assets/images/stella-marina.jpg" alt="Stella Marina">
+                    <p>⭐ Stella Marina</p>
+                </div>
+                <div class="animal-card" data-animal="3">
+                    <img src="assets/images/balena.jpg" alt="Balena">
+                    <p>🐋 Balena</p>
+                </div>
+                <div class="animal-card" data-animal="4">
+                    <img src="assets/images/squalo.jpg" alt="Squalo">
+                    <p>🦈 Squalo</p>
+                </div>
+                <div class="animal-card" data-animal="5">
+                    <img src="assets/images/delfino.jpg" alt="Delfino">
+                    <p>🐬 Delfino</p>
+                </div>
+                <div class="animal-card" data-animal="6">
+                    <img src="assets/images/polpo.jpg" alt="Polpo">
+                    <p>🐙 Polpo</p>
+                </div>
+                <div class="animal-card" data-animal="7">
+                    <img src="assets/images/tartaruga-marina.jpg" alt="Tartaruga Marina">
+                    <p>🐢 Tartaruga Marina</p>
+                </div>
+                <div class="animal-card" data-animal="8">
+                    <img src="assets/images/granchio.jpg" alt="Granchio">
+                    <p>🦀 Granchio</p>
+                </div>
+                <div class="animal-card" data-animal="9">
+                    <img src="assets/images/pesce-pagliaccio.jpg" alt="Pesce Pagliaccio">
+                    <p>🐠 Pesce Pagliaccio</p>
+                </div>
+            </div>
+
+            <!-- Quiz Container -->
+            <div id="quiz-container" class="quiz-container hidden">
+                <button id="back-btn" class="back-btn">← Torna agli Animali</button>
+                
+                <div id="progress-bar">
+                    <div id="progress-fill"></div>
+                </div>
+                <h2 id="question-title"></h2>
+                <div id="question-image-container">
+                   <img id="question-image" src="" alt="">
+                </div> 
+                
+                <!-- Messaggio di incoraggiamento -->
+                <div id="encouragement" class="encouragement hidden"></div>
+                
+                <div id="answers" class="answers"></div>
+            </div>
+
+            <!-- Risultati -->
+            <div id="results" class="results hidden">
+                <h2>🎉 Sei stato Fantastico! 🎉</h2>
+                <p id="score-message"></p>
+                <div class="celebration">🌟⭐✨💫🌟⭐✨💫</div>
+                <button id="restart-btn" class="btn">Gioca Ancora!</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezione Download -->
+    <section id="download-section">
+        <div class="container">
+            <h2>🎨 Scarica e Colora!</h2>
+            <p>Vuoi colorare gli animali marini? Scarica il file e divertiti!</p>
+            <a href="downloads/attivita-extra.pdf" download class="download-btn">
+                📥 Scarica Disegni da Colorare
+            </a>
+        </div>
+    </section>
+
+    <!-- Sezione Commenti -->
+    <section id="comments-section">
+        <div class="container">
+            <h2>💌 Cosa ne pensi?</h2>
+            <p>Ti è piaciuto? Raccontacelo!</p>
+            <form action="https://formspree.io/f/mzdbeakz" method="POST">
+                <textarea name="message" id="comment-textarea" placeholder="Scrivi qui cosa ti è piaciuto di più..." required></textarea>
+                <input type="text" name="nome" placeholder="Il tuo nome (se vuoi)" class="input-field">
+                <button type="submit" class="btn">Invia il Tuo Messaggio 💌</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>Quiz degli Animali Marini 🌊 Fatto con ❤️</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
