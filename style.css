@@ -30,24 +30,7 @@ body {
     z-index: 9999;
 }
 
-/* Sezioni 
-section {
-    min-height: 100vh;
-    padding: 40px 0;
-}
 
-#quiz-section {
-    background: linear-gradient(135deg, #1c4aef 0%, #d98e94 100%);
-}
-
-#download-section {
-    background: linear-gradient(135deg, #d98e94 0%, #1c4aef 100%);
-}
-
-#comments-section {
-    background: linear-gradient(135deg, #1c4aef 0%, #5a7bef 100%);
-}
-*/
 /* Titoli */
 .title {
     text-align: center;
